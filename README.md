@@ -1,0 +1,2 @@
+# mips-pw-install
+给MIPS架构（例如MT7621）的Passwall一键安装脚本（稳定性未知
