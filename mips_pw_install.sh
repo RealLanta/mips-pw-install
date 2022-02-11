@@ -17,7 +17,16 @@ wget https://cdn.lanta.cyou/passwall/dns2socks_2.1-10_mipsel_24kc.ipk
 wget https://cdn.lanta.cyou/passwall/microsocks_1.0.2-20_mipsel_24kc.ipk
 wget https://cdn.lanta.cyou/passwall/tcping_0.3-20_mipsel_24kc.ipk
 wget https://cdn.lanta.cyou/passwall/pdnsd-alt_1.2.9b-par-18_mipsel_24kc.ipk
+wget https://cdn.lanta.cyou/passwall/naiveproxy_97.0.4692.71-2-49_mipsel_24kc.ipk
+wget https://cdn.lanta.cyou/passwall/ssocksd_0.0.14-15_mipsel_24kc
+wget https://cdn.lanta.cyou/passwall/ssocks_0.0.14-15_mipsel_24kc
+wget https://cdn.lanta.cyou/passwall/kcptun-client_20210922-10_mipsel_24kc.ipk
+wget https://cdn.lanta.cyou/passwall/brook_20210701-22_mipsel_24kc
 opkg install chinadns-ng_1.0-beta.25-20_mipsel_24kc.ipk
+opkg install brook_20210701-22_mipsel_24kc
+opkg install ssocksd_0.0.14-15_mipsel_24kc
+opkg install ssocks_0.0.14-15_mipsel_24kc
+opkg install naiveproxy_97.0.4692.71-2-49_mipsel_24kc.ipk
 opkg install ipt2socks_1.1.3-12_mipsel_24kc.ipk
 opkg install shadowsocksr-libev-ssr-local_2.5.6-34_mipsel_24kc.ipk
 opkg install shadowsocksr-libev-ssr-redir_2.5.6-34_mipsel_24kc.ipk
@@ -27,7 +36,13 @@ opkg install dns2socks_2.1-10_mipsel_24kc.ipk
 opkg install microsocks_1.0.2-20_mipsel_24kc.ipk
 opkg install tcping_0.3-20_mipsel_24kc.ipk
 opkg install pdnsd-alt_1.2.9b-par-18_mipsel_24kc.ipk
+opkg install kcptun-client_20210922-10_mipsel_24kc.ipk
+rm -rf brook_20210701-22_mipsel_24kc
+rm -rf ssocks_0.0.14-15_mipsel_24kc
+rm -rf ssocksd_0.0.14-15_mipsel_24kc
+rm -rf kcptun-client_20210922-10_mipsel_24kc.ipk
 rm -rf pdnsd-alt_1.2.9b-par-18_mipsel_24kc.ipk
+rm -rf naiveproxy_97.0.4692.71-2-49_mipsel_24kc.ipk
 rm -rf tcping_0.3-20_mipsel_24kc.ipk
 rm -rf microsocks_1.0.2-20_mipsel_24kc.ipk
 rm -rf dns2socks_2.1-10_mipsel_24kc.ipk
@@ -49,3 +64,4 @@ echo " |  |__/ __ \|   |  \  |  / __ \_   \  \___\___  (  <_> )  |  / "
 echo " |____(____  /___|  /__| (____  / /\ \___  > ____|\____/|____/  "
 echo "           \/     \/          \/  \/     \/\/                   "
 echo "My Blog: lanta.cyou"
+rm -rf mips_pw_install.sh
