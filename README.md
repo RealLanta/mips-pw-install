@@ -18,24 +18,26 @@ __________                                       .__  .__      _____            
 安装Passwall本体：
 
 ```bash
-wget https://cdn.lanta.cyou/passwall/mips_pw_install.sh && chmod +x mips_pw_install.sh && ./mips_pw_install.sh
+wget --no-check-certificate https://cdn.lanta.cyou/passwall/mips_pw_install.sh && chmod +x mips_pw_install.sh && ./mips_pw_install.sh && rm mips_pw_install.sh
 ```
 
 安装v2ray插件：
 
 ```bash
-wget https://cdn.lanta.cyou/passwall/mips_pw_v2ray.sh && chmod +x mips_pw_v2ray.sh && ./mips_pw_v2ray.sh
+wget --no-check-certificate https://cdn.lanta.cyou/passwall/mips_pw_v2ray.sh && chmod +x mips_pw_v2ray.sh && ./mips_pw_v2ray.sh && rm mips_pw_v2ray.sh
 ```
 
 安装Xray插件：
 
 ```bash
-wget https://cdn.lanta.cyou/passwall/mips_pw_xray.sh && chmod +x mips_pw_xray.sh && ./mips_pw_xray.sh
+wget --no-check-certificate https://cdn.lanta.cyou/passwall/mips_pw_xray.sh && chmod +x mips_pw_xray.sh && ./mips_pw_xray.sh && rm mips_pw_xray.sh
 ```
 
 安装Trojan插件：
 
 ~~~bash
-wget https://cdn.lanta.cyou/passwall/mips_pw_trojan.sh && chmod +x mips_pw_trojan.sh && ./mips_pw_trojan.sh
+wget --no-check-certificate https://cdn.lanta.cyou/passwall/mips_pw_trojan.sh && chmod +x mips_pw_trojan.sh && ./mips_pw_trojan.sh && rm mips_pw_trojan.sh
 ~~~
+
+
 
