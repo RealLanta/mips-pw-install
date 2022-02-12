@@ -7,6 +7,7 @@ __________                                       .__  .__      _____            
  |____|    (____  /____  >____  >  \/\_/  (____  /____/____/  |__|  \____/|__|    \____|__  /__|   __/____  >
                 \/     \/     \/               \/                                         \/   |__|       \/ 
 ```
+*Design by [TAAG](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Passwall%20for%20Mips)*
 
 给MIPS架构（例如MT7621）的Passwall一键安装脚本（稳定性未知）
 
