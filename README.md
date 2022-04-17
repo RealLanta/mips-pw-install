@@ -19,6 +19,7 @@ __________                                       .__  .__      _____            
 
 ```bash
 wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/mips_pw_install.sh && chmod +x mips_pw_install.sh && ./mips_pw_install.sh
+```
 
 安装v2ray插件：
 
@@ -34,9 +35,9 @@ wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-instal
 
 安装Trojan插件：
 
-~~~bash
+```bash
 wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/mips_pw_trojan.sh && chmod +x mips_pw_trojan.sh && ./mips_pw_trojan.sh
-~~~
+```
 
 
 
