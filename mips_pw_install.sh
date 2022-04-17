@@ -19,10 +19,10 @@ wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-instal
 wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/packages/tcping_0.3-20_mipsel_24kc.ipk
 wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/packages/pdnsd-alt_1.2.9b-par-18_mipsel_24kc.ipk
 wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/packages/naiveproxy_97.0.4692.71-2-49_mipsel_24kc.ipk
-wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/packages/ssocksd_0.0.14-15_mipsel_24kc
-wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/packages/ssocks_0.0.14-15_mipsel_24kc
+wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/packages/ssocksd_0.0.14-15_mipsel_24kc.ipk
+wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/packages/ssocks_0.0.14-15_mipsel_24kc.ipk
 wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/packages/kcptun-client_20210922-10_mipsel_24kc.ipk
-wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/packages/brook_20210701-22_mipsel_24kc
+wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/packages/brook_20210701-22_mipsel_24kc.ipk
 opkg install chinadns-ng_1.0-beta.25-20_mipsel_24kc.ipk
 opkg install brook_20210701-22_mipsel_24kc
 opkg install ssocksd_0.0.14-15_mipsel_24kc
