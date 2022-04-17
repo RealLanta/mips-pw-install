@@ -5,10 +5,11 @@ echo "  |     ___/\__  \  /  ___//  ___/\ \/ \/ /\__  \ |  | |  |     |    |  \_
 echo "  |    |     / __ \_\___ \ \___ \  \     /  / __ \|  |_|  |__   |    |   |  | \(  <_> )  |  |/ __ \|   |  \ "
 echo "  |____|    (____  /____  >____  >  \/\_/  (____  /____/____/   |____|   |__|   \____/\__|  (____  /___|  / "
 echo "                \/     \/     \/               \/                                   \______|    \/     \/   "
-echo "Please wait... We are installing v2ray on your router"
-wget --no-check-certificate https://cdn.lanta.cyou/passwall/trojan-go_0.10.6-20_mipsel_24kc.ipk
-wget --no-check-certificate https://cdn.lanta.cyou/passwall/trojan_1.16.0-7_mipsel_24kc.ipk
-wget --no-check-certificate https://cdn.lanta.cyou/passwall/trojan-plus_10.0.3-8_mipsel_24kc.ipk
+echo "v0.6"
+echo "Please wait... We are installing Trojan on your router"
+wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/packages/trojan-go_0.10.6-20_mipsel_24kc.ipk
+wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/packages/trojan_1.16.0-7_mipsel_24kc.ipk
+wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/packages/trojan-plus_10.0.3-8_mipsel_24kc.ipk
 opkg install trojan-go_0.10.6-20_mipsel_24kc.ipk
 opkg install trojan-plus_10.0.3-8_mipsel_24kc.ipk
 opkg install trojan_1.16.0-7_mipsel_24kc.ipk

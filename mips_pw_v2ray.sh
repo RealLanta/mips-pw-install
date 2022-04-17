@@ -5,9 +5,10 @@ echo " |     ___/\__  \  /  ___//  ___/\ \/ \/ /\__  \ |  | |  |   \  \/ //  ___
 echo " |    |     / __ \_\___ \ \___ \  \     /  / __ \|  |_|  |__  \   //       \ |  | \// __ \\___  |"
 echo " |____|    (____  /____  >____  >  \/\_/  (____  /____/____/   \_/ \_______ \|__|  (____  / ____|"
 echo "                \/     \/     \/               \/                          \/           \/\/     "
+echo "v0.6"
 echo "Please wait... We are installing v2ray on your router"
-wget --no-check-certificate https://cdn.lanta.cyou/passwall/v2ray-core_4.43.0-30_mipsel_24kc.ipk
-wget --no-check-certificate https://cdn.lanta.cyou/passwall/v2ray-plugin_5.0.2-56_mipsel_24kc.ipk
+wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/packages/v2ray-core_4.43.0-30_mipsel_24kc.ipk
+wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/packages/v2ray-plugin_5.0.2-56_mipsel_24kc.ipk
 opkg install v2ray-core_4.43.0-30_mipsel_24kc.ipk
 opkg install v2ray-plugin_5.0.2-56_mipsel_24kc.ipk
 clear

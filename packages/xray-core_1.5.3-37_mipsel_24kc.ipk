@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title> - OneManager</title>
+<!--
+    OneManager: An index & manager of Onedrive auth by ysun.
+    HIT Gitlab: https://git.hit.edu.cn/ysun/OneManager-php
+    Github: https://github.com/qkqpttgf/OneManager-php
+-->
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta name="keywords" content=", passwall, OneManager">
+    <meta name="description" content="">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <style type="text/css">
+        body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;line-height:1em;color:#000;background-color:#f7f7f9;}
+        a{color:#24292e;cursor:pointer;text-decoration:none}
+        ion-icon{font-size:15px;vertical-align:bottom}
+        .changelanguage{position:absolute;right:5px;}
+        .title{text-align:center;margin-top:1rem;letter-spacing:2px;margin-bottom:2rem}
+        .title a{color:#333;text-decoration:none}
+        .list-wrapper{width:80%;margin:0 auto 30px;position:relative;box-shadow:0 0 32px 0 rgb(128,128,128);border-radius:15px;}
+        .list-container{position:relative;/*overflow:hidden;*/border-radius:15px;background-color:rgba(245,245,245,0.5);}
+        .list-container,.list-header-container,.list-wrapper,a.back-link:hover,body{color:#24292e}
+        .list-header-container{position:relative}
+        .list-header-container a.back-link{color:#000;display:inline-block;position:absolute;font-size:16px;margin:20px 10px;padding:10px 10px;vertical-align:middle;text-decoration:none}
+        .table-header{margin:0;border:0 none;padding:30px 30px;text-align:left;font-weight:400;color:#000;word-break: break-all;word-wrap: break-word;}
+        .list-body-container{position:relative;left:0;box-sizing:border-box;/*overflow-x:hidden;overflow-y:auto;background:rgba(245,245,245,0.5)*/}
+        .more-disk{margin:0;border:0 none;padding:30px 30px;text-align:left;font-weight:400;color:#000;white-space:nowrap;overflow:auto;}
+        .more-disk a{margin:0 10px;padding:5px;transition-duration: 0.4s;border-radius: 12px; background-color: white; color: black; border: 2px solid rgba(85,85,85,0.7); }
+        .more-disk a:hover, .more-disk a[now]{ background-color: rgba(85,85,85,0.7); color: white; }
+        .list-table{width:100%;padding:0 20px 20px 20px;border-spacing:0}
+        .list-table tr{height:40px}
+        .list-table tr[data-to]:hover{background:rgba(85,85,85,0.7) !important;color:white;}
+        .list-table tr[data-to]:hover a{color:white}
+        .list-table tr:first-child{background:rgba(245,245,245,0)}
+        .list-table td,.list-table th{padding:0 10px;text-align:left}
+        .list-table .size,.list-table .updated_at{text-align:right}
+        .updated_at{width:25%}
+        .size{width:15%}
+        .mask{position:absolute;left:0px;top:0px;width:100%;background-color:#000;filter:alpha(opacity=50);opacity:0.5;z-index:2;}
+
+        .operatediv{position:absolute;border:1px #CCCCCC;background-color:#FFFFCC;z-index:2;}
+        .operatediv div{margin:16px}
+        .operatediv_close{position:absolute;right:3px;top:3px;}
+        .readme{padding:8px;}
+        .markdown-body, .customfile{padding:20px;text-align:left}
+        @media only screen and (orientation: portrait){
+
+            .title{margin-bottom:24px}
+            .list-wrapper{width:95%; margin-bottom:24px;}
+            .list-table {padding:8px}
+            .list-table td, .list-table th{white-space:nowrap;overflow:auto;max-width:80px}
+            .size, .updated_at{display:none}
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div style="padding:1px" id="top-div">
+
+        <a class="login" onclick="login();"><ion-icon name="log-in"></ion-icon>Login</a>
+
+
+        &nbsp;
+        <!--<select class="changelanguage" name="language" onchange="changelanguage(this.options[this.options.selectedIndex].value)">
+            <option value="">Language</option>
+
+                <option value="en-us" selected="selected">English</option>
+
+                <option value="zh-tw" >繁體中文</option>
+
+                <option value="zh-cn" >简体中文</option>
+
+                <option value="ja" >日本語</option>
+
+                <option value="ko-kr" >한국어</option>
+
+                <option value="fa" >فارسی</option>
+
+                <option value="ar-sa" >السعودية</option>
+
+        </select>-->
+    </div>
+
+    <h1 class="title" id="title">
+        <a href="/">OneManager</a>
+    </h1>
+<!--
+
+-->
+
+
+
+    <div class="list-wrapper" id="list-div">
+        <div class="list-container">
+            <div class="list-header-container">
+                <h3 class="table-header"><a href="/">Home</a> / <a href="/passwall/">passwall</a> / <a href="/passwall/xray-core_1.5.3-37_mipsel_24kc.ipk/">xray-core_1.5.3-37_mipsel_24kc.ipk</a></h3>
+            </div>
+            <div class="list-body-container">
+
+                <div style="padding:20px">
+	            <center>
+	                <form action="" method="post">
+		            <input id="password1" name="password1" type="password" placeholder="Input Password">
+		            <input type="submit" value="Submit">
+	                </form>
+                </center>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="mask" class="mask" style="display:none;"></div>
+
+
+    <div id="login_div" class="operatediv" style="display:none">
+        <div style="margin:50px">
+            <a onclick="operatediv_close('login')" class="operatediv_close">Close</a>
+            <center>
+                <form action="?login=admin" method="post" onsubmit="return sha1loginpass(this);">
+                    <input id="login_input" name="password1" type="password" placeholder="Input Password">
+                    <input name="timestamp" type="hidden" value="">
+                    <input type="submit" value="Login">
+                </form>
+            </center>
+        </div>
+    </div>
+
+    <div style="color: rgba(247,247,249,0);">2022-04-17 11:29:27 Sunday 20.222.117.164 Runningtime:0.815s Mem:393.26 KB</div>
+</body>
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function changelanguage(str)
+    {
+        if (str=='Language') str = '';
+        var expd = new Date();
+        expd.setTime(expd.getTime()+(2*60*60*1000));
+        var expires = "expires="+expd.toGMTString();
+        document.cookie='language='+str+'; path=/; '+expires;
+        location.href = location.href;
+    }
+
+    function login() {
+        document.getElementById('mask').style.display='';
+            //document.getElementById('mask').style.width=document.documentElement.scrollWidth+'px';
+        document.getElementById('mask').style.height=document.documentElement.scrollHeight<window.innerHeight?window.innerHeight:document.documentElement.scrollHeight+'px';
+        document.getElementById('login_div').style.display='';
+        document.getElementById('login_div').style.left=(document.body.clientWidth-document.getElementById('login_div').offsetWidth)/2 +'px';
+        document.getElementById('login_div').style.top=(window.innerHeight-document.getElementById('login_div').offsetHeight)/2+document.body.scrollTop +'px';
+        document.getElementById('login_input').focus();
+    }
+    function sha1loginpass(f) {
+        if (f.password1.value=="") return false;
+        try {
+            timestamp = new Date().getTime() + "";
+            timestamp = timestamp.substr(0, timestamp.length-3);
+            f.timestamp.value = timestamp;
+            f.password1.value = sha1(timestamp + "" + f.password1.value);
+            return true;
+        } catch {
+            alert("sha1.js not loaded.");
+            return false;
+        }
+    }
+
+
+
+
+
+
+    var nowtime= new Date();
+    var timezone = 0-nowtime.getTimezoneOffset()/60;
+    var expd = new Date();
+    expd.setTime(expd.getTime()+(2*60*60*1000));
+    var expires = "expires="+expd.toGMTString();
+    document.cookie="timezone="+timezone+"; path=/; "+expires;
+    if (timezone!=8) {
+        alert('Your timezone is '+timezone+', reload local timezone.');
+        location.href=location.href;
+    }
+
+    function CopyAllDownloadUrl(str) {
+        var tmptextarea=document.createElement('textarea');
+        document.body.appendChild(tmptextarea);
+        tmptextarea.setAttribute('style','position:absolute;left:-100px;width:0px;height:0px;');
+        document.querySelectorAll(str).forEach(function (e) {
+            tmptextarea.innerHTML+=e.href+"\r\n";
+        });
+        tmptextarea.select();
+        tmptextarea.setSelectionRange(0, tmptextarea.value.length);
+        document.execCommand("copy");
+        alert(tmptextarea.innerHTML+"Success");
+    }
+
+
+
+
+
+    function operatediv_close(operate) {
+        document.getElementById(operate+'_div').style.display='none';
+        document.getElementById('mask').style.display='none';
+    }
+
+
+    document.getElementById('password1').focus();
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-sha1@0.6.0/src/sha1.min.js"></script>
+
+</html>
