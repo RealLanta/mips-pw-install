@@ -9,9 +9,7 @@ __________                                       .__  .__      _____            
 ```
 *Design by [TAAG](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Passwall%20for%20Mips)*
 
-给MIPS架构（例如MT7621）的Passwall一键安装脚本（稳定性未知）
-
-可以到我的[博客](https://www.lanta.cyou/index.php/archives/30/)去看看详细的使用办法
+给MIPS架构（例如MT7621）的Passwall一键安装脚本
 
 # 如何使用？
 
