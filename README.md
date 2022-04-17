@@ -37,5 +37,19 @@ wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-instal
 wget --no-check-certificate https://cdn.jsdelivr.net/gh/RealLanta/mips-pw-install/mips_pw_trojan.sh && chmod +x mips_pw_trojan.sh && ./mips_pw_trojan.sh
 ```
 
+# 疑难解答
 
+## pkg_hash_check_unresolved: cannot find dependency kernel (= XXX) for XXX
 
+出现该错误则你的OpenWrt系统需要更新内核，更新内核后一般情况下可以修复该问题
+
+请前往OpenWrt官方下载源下载`kernel`包并安装
+
+| 架构   | 芯片   | 链接                                                         |
+| ------ | ------ | ------------------------------------------------------------ |
+| RAMIPS | MT7620 | https://downloads.openwrt.org/snapshots/targets/ramips/mt7620/packages/ |
+| RAMIPS | MT7621 | https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/packages/ |
+| RAMIPS | MT76X8 | https://downloads.openwrt.org/snapshots/targets/ramips/mt76x8/packages |
+| RAMIPS | RT288X | https://downloads.openwrt.org/snapshots/targets/ramips/rt288x/packages |
+| RAMIPS | RT305X | https://downloads.openwrt.org/snapshots/targets/ramips/rt305x/packages |
+| RAMIPS | RT3883 | https://downloads.openwrt.org/snapshots/targets/ramips/rt3883/packages |
